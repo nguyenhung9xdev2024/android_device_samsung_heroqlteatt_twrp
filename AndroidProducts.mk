@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_gts3llte.mk
+    $(LOCAL_DIR)/omni_heroqlteatt.mk

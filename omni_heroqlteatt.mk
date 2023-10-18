@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := gts3llte
+PRODUCT_RELEASE_NAME := heroqlteatt
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -27,8 +27,8 @@ PRODUCT_COPY_FILES += \
     system/timezone/output_data/iana/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := gts3llte
-PRODUCT_NAME := omni_gts3llte
+PRODUCT_DEVICE := heroqlteatt
+PRODUCT_NAME := omni_heroqlteatt
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-T825
+PRODUCT_MODEL := SM-G930A
 PRODUCT_MANUFACTURER := Samsung
