@@ -61,6 +61,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8996
+TARGET_KERNEL_CONFIG := heroqlte_chn_open_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/heroqlteatt/mkbootimg.mk
 
 # Partitions
