@@ -49,6 +49,8 @@ TARGET_BOOTLOADER_BOARD_NAME := msm8996
 TARGET_PLATFORM_DEVICE_BASE := "/devices/soc/"
 
 # Kernel
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7464900.sdhci lpm_levels.sleep_disabled=1 rcupdate.rcu_expedited=1 cma=32M@0-0xffffffff
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -58,7 +60,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-TARGET_PREBUILT_KERNEL := device/samsung/heroqlteatt/prebuilt/Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8996
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/heroqlteatt/mkbootimg.mk
 
 # Partitions
